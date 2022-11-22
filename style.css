@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contenedor-de-input{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 975px;
+}
+p {
+    padding: 20px;
+}
+#nueva-contrasenia {
+    display: none;
+}
+
+#contrasenia{
+    display: flex;
+}
+
+input {
+    text-align: center;
+    width: 450px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.div-input{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-contacto {
+    background: linear-gradient(-45deg, #5080d3, #000000, #356fd3);
+    background-size: 800% 400%;
+    padding: 1em 2em;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+}
+
+.boton-contacto:hover {
+    animation: gradient 3s infinite;
+    transform: scale(1.05);
+}
+
+.boton-contacto:active {
+    animation: gradient 3s infinite;
+    transform: scale(0.8);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* FIN EFECTO BOTON */
